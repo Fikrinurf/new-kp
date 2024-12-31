@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Front;
 
+use App\Models\Time;
 use App\Models\Booking;
+use App\Models\FutsalCourt;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\UserBookingReq;
-use App\Models\FutsalCourt;
-use App\Models\Time;
 use Yajra\DataTables\Facades\DataTables;
 
 class BookingController extends Controller
@@ -70,6 +71,7 @@ class BookingController extends Controller
 
         return view('user.booking-create', [
             'times' => $times,
+            'user' => Auth::user(),
             'futsal_courts' => FutsalCourt::get(),
             'bookedTimes' => $bookedTimes // Kirim slot yang sudah dipesan ke tampilan
         ]);
