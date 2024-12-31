@@ -1,23 +1,25 @@
 body {
     background-color: #181562;
+    color: #ffffff;
 }
 
 .booking{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 100px;
     gap: 15px;
 }
 
 
 
 .container-booking {
-    background-color: #D8D7E4; /* Light grey form background */
+    background-color: #3329a0;/* Light grey form background */
     border-radius: 10px;
     padding: 30px;
     margin-top: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 700px;
+   
 }
 
 .form-group input{
@@ -49,7 +51,7 @@ button {
 
 
 .container-infobooking {
-    background-color: #D8D7E4;
+    background-color: #3329a0;
     border-radius: 10px;
     padding: 30px;
     margin-top: 50px;

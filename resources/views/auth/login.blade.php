@@ -4,13 +4,7 @@
 @endpush
 @section('content')
     <section class="container">
-        <div class="gambar">
-            <h1>
-                Ayo Kelola Keuangan <span><br />Anda bersama kami </span>
-            </h1>
-            <img src="img/loginimg.png" alt="" />
-        </div>
-
+   
         <div class="form">
             @if ($errors->any())
                 <script>

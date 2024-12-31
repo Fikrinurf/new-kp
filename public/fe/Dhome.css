@@ -13,7 +13,7 @@ body{
 
 
 .btn-login{
-    background-color: #3329AE;
+    background-color: #3329a0;
     color: white;
     border-radius: 15px;
 }
@@ -25,7 +25,7 @@ body{
 
 
 .container-fasilitas{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .text-fasilitas{
@@ -33,7 +33,7 @@ body{
 }
 .container-fasilitas .card-fasilitas {
 
-    background-color: #3329AE;
+    background-color: #3329a0;
     height: 200px;
     border-radius: 20px;
 }
@@ -59,6 +59,24 @@ body{
 
 .fasilitas-artikel{
     font-size: 20px;
+}
+
+
+.hero-jadwal{
+    color: white;
+    background-color: #3329a0;
+    height: 470px;
+    border-radius: 20px;
+    margin-top: 170px;
+}
+
+.hero-jadwal .judul{
+    position: relative;
+    top: 20px;
+}
+
+.hero-jadwal .tabel-jadwal{
+    border-radius: 20px;
 }
 
 

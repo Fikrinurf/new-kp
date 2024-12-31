@@ -5,7 +5,7 @@
 @endpush
 @section('content')
     <section class="booking">
-        <div class="container-booking mt-5">
+        <div class="container-booking">
             @if ($errors->any())
                 <div class="my-3">
                     <div class="alert alert-danger">
@@ -18,7 +18,7 @@
                 </div>
             @endif
             <div class="">
-                <div class="card-body">
+                <div class="card-body ">
                     <h2 class="text-center mb-4">FORM BOOKING</h2>
                     <form action="{{ url('/user-booking') }}" method="post" enctype="multipart/form-data">
                         @csrf

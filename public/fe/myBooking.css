@@ -1,0 +1,11 @@
+body {
+    background-color: #181562;
+}
+
+.container-mybooking{
+    color: #ffff;
+    margin-top: 150px;
+    background-color: #3329a0; /* Light grey form background */
+    border-radius: 10px;
+    padding: 30px;
+}

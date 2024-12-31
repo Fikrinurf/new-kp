@@ -4,12 +4,7 @@
 @endpush
 @section('content')
     <div class="container">
-        <div class="gambar">
-            <h1>
-                Ayo Kelola Keuangan <span><br />Anda bersama kami </span>
-            </h1>
-            <img src="techny-data-privacy-and-security-on-laptop 1.png" alt="" />
-        </div>
+       
 
         <div class="form">
             <h1>Daftar</h1>

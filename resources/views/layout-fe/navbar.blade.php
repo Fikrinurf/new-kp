@@ -14,12 +14,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/user-booking') }}">My Booking</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="{{ url('/about-us') }}">About us</a>
                 </li>
             </ul>
         </div>

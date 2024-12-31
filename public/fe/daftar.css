@@ -50,8 +50,6 @@ body {
 
 
 p {
-
-
   padding: 10px;
   text-align: center;
 }
@@ -70,8 +68,8 @@ h1 {
   position: relative;
   width: 18px;
   height: 18px;
-  top: -34px;
-  left: 35px;
+  right: 410px;
+  top: -2px;
 
 }
 
@@ -146,18 +144,18 @@ form .label-kataSandi {
 }
 
 .field-email {
-  margin-top: -25px;
+  margin-top: 1px;
 
 }
 
 
 
 .field-telepon {
-  margin-top: -25px;
+  margin-top: 0px;
 }
 
 .field-kataSandi {
-  margin-top: -25px;
+  margin-top: 0px;
 }
 
 
@@ -193,7 +191,7 @@ p a {
 
 }
 
-.gambar {
+/* .gambar {
   margin-top: -40px;
   display: block;
 
@@ -203,7 +201,7 @@ p a {
 .gambar img {
   margin-top: -100px;
   margin-left: 55px;
-}
+} */
 
 .checkbox {
   display: inline;

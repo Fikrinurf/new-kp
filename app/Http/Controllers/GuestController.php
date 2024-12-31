@@ -38,4 +38,9 @@ class GuestController extends Controller
 
         return view('guest');
     }
+
+    public function aboutUs()
+    {
+        return view('user.aboutUs');
+    }
 }

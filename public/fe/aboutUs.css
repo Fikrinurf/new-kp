@@ -2,12 +2,25 @@ body{
     background-color: #181562;
 }
 
+.photo-aboutus{
+    margin-top: 80px;
+}
+
+.text-aboutUs{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 60px;
+}
+
+
+
+
 .container-service{
     margin-top: 100px;
 }
 .container-service .card-service {
 
-    background-color: #3329AE;
+    background-color: #3329a0;;
     height: 260px;
     border-radius: 20px;
     margin-top: 30px;
@@ -40,30 +53,34 @@ body{
     font-size: 20px;
 }
 
+
+.container{
+    margin-top: 150px;
+}
+
 .container-contact{
-    margin-left: 30px;
-}
-.card-contact{
-    width: 520px;
-    background-color: #D8D7E4;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.form-contact .form-group{
-    margin-top: 10px;}
-
-.form-contact .form-group input{
-    border-radius: 10px;
-}
-
-.form-contact .form-group textarea{
-    border-radius: 10px;
+.contact-form {
+    background-color: #3329a0;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
 
 
-.container-maps{
-    color: white;
+.contact-form h2 {
+    color: #ffffff;
 }
-.card-maps iframe{
-    border-radius: 15px;
+
+.location h2, .location p{
+    color: #ffffff;
+}
+.contact-form p {
+    color: #ffffff;
+}
+.btn-custom {
+    background-color: #2929da;
+    color: #ffffff;
 }
