@@ -5,9 +5,16 @@
         </a>
         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav gap-5 ">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url('/user-home') }}">Home</a>
-                </li>
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url('/user-home') }}">Home</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+                    </li>
+                @endauth
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/user-booking/create') }}">Booking</a>
                 </li>
@@ -15,9 +22,15 @@
                     <a class="nav-link" href="{{ url('/user-booking') }}">My Booking</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/about-us') }}">About us</a>
-                </li>
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/user/about-us') }}">About Us</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
+                    </li>
+                @endauth
             </ul>
         </div>
 

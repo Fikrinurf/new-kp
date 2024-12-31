@@ -31,6 +31,7 @@ Route::middleware(['guest'])->group(function () {
     Route::post('/login', [SesiController::class, 'login']);
     Route::get('/register', [SesiController::class, 'register'])->name('register');
     Route::post('/register', [SesiController::class, 'registerProcess']);
+    Route::get('/about-us', [GuestController::class, 'aboutUs']);
 });
 
 Route::get('/home', function () {
@@ -53,8 +54,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/logout', [SesiController::class, 'logout']);
     Route::get('/user-home', [GuestController::class, 'index'])->middleware('userAkses:user');
     Route::get('/rekap/download', [OwnerController::class, 'downloadPDF'])->name('rekap.download')->middleware('userAkses:owner');
+    Route::get('/user/about-us', [GuestController::class, 'aboutUs'])->middleware('userAkses:user');
 });
-
-Route::get('/about-us', [GuestController::class, 'aboutUs']);
-
-
