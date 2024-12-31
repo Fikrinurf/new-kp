@@ -11,6 +11,7 @@ use App\Http\Controllers\Front\CustomerController;
 use App\Http\Controllers\Back\ViewPerMonthController;
 use App\Http\Controllers\GuestController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,3 +54,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/user-home', [GuestController::class, 'index'])->middleware('userAkses:user');
     Route::get('/rekap/download', [OwnerController::class, 'downloadPDF'])->name('rekap.download')->middleware('userAkses:owner');
 });
+
+Route::get('/about-us', [GuestController::class, 'aboutUs']);
+
+
