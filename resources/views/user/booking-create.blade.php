@@ -26,19 +26,19 @@
                             <div class="form-group col-md-6">
                                 <label for="nama">Nama</label>
                                 <input type="text" class="form-control" id="name" name="name"
-                                    value="{{ old('name') }}" placeholder="Nama Lengkap">
+                                    value="{{ old('name', $user->name) }}" placeholder="Nama Lengkap">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="noTelp">No Telepon</label>
                                 <input type="text" class="form-control" id="noTelp" name="phone_number"
-                                    value="{{ old('phone_number') }}" placeholder="Nomor Telepon">
+                                    value="{{ old('phone_number', $user->phone_number) }}" placeholder="Nomor Telepon">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="alamat">Alamat</label>
                                 <input type="text" class="form-control" id="alamat" name="address"
-                                    value="{{ old('address') }}" placeholder="Alamat">
+                                    value="{{ old('address', $user->address) }}" placeholder="Alamat">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="tanggal">Tanggal</label>
