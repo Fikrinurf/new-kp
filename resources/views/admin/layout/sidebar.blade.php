@@ -3,7 +3,7 @@
     <div class="sidepanel-inner d-flex flex-column">
         <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
         <div class="app-branding">
-            <a class="app-logo" href="index.html"><img class="logo-icon me-2" src="assets/images/app-logo.svg"
+            <a class="app-logo" href="index.html"><img class="logo-icon me-2" src="{{ asset('img/pakuwon.png') }}"
                     alt="logo"><span class="logo-text">Pakuwon</span></a>
 
         </div><!--//app-branding-->
