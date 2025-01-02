@@ -46,10 +46,9 @@ class OwnerController extends Controller
     {
         $userCount = User::count();
         $bookingCount = Booking::where('status', "1")->count();
-        $lapanganCount = FutsalCourt::count();
         $adminCount = User::where('role', "admin")->count();
 
-        return view('owner.dashboard', compact('userCount', 'bookingCount', 'lapanganCount', 'adminCount'));
+        return view('owner.dashboard', compact('userCount', 'bookingCount', 'adminCount'));
     }
 
     public function downloadPDF(Request $request)
