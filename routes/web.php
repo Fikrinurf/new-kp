@@ -55,4 +55,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/user-home', [GuestController::class, 'index'])->middleware('userAkses:user');
     Route::get('/rekap/download', [OwnerController::class, 'downloadPDF'])->name('rekap.download')->middleware('userAkses:owner');
     Route::get('/user/about-us', [GuestController::class, 'aboutUs'])->middleware('userAkses:user');
+
+    Route::get('/booking-chart-data', [OwnerController::class, 'chartData'])->middleware('userAkses:owner');
 });

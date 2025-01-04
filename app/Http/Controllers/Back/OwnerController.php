@@ -10,6 +10,8 @@ use App\Http\Controllers\Controller;
 use App\Models\FutsalCourt;
 use Yajra\DataTables\Facades\DataTables;
 use Mpdf\Mpdf;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class OwnerController extends Controller
 {
@@ -74,5 +76,29 @@ class OwnerController extends Controller
 
         // Output PDF ke browser
         $mpdf->Output("rekap_booking_{$month}_{$year}.pdf", 'D');
+    }
+
+    public function chartData(Request $request)
+    {
+        $startDate = $request->start_date ? Carbon::parse($request->start_date) : Carbon::now()->subDays(30);
+        $endDate = $request->end_date ? Carbon::parse($request->end_date) : Carbon::now();
+
+        $bookings = Booking::where('status', "1")
+            ->whereDate('date', '>=', $startDate)
+            ->whereDate('date', '<=', $endDate)
+            ->select(
+                DB::raw('DATE(date) as date'),
+                DB::raw('COUNT(*) as total')
+            )
+            ->groupBy('date')
+            ->orderBy('date')
+            ->get();
+
+        return response()->json([
+            'labels' => $bookings->pluck('date')->map(function ($date) {
+                return Carbon::parse($date)->format('d M Y');
+            }),
+            'data' => $bookings->pluck('total')
+        ]);
     }
 }
