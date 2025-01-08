@@ -23,7 +23,7 @@
                     <p>0812-9990-4546</p>
                 </div>
                 <div>
-                    <h3>Pembayaran</h3>
+                    <h3>Alamat</h3>
                     <p>Ancaran, Kec. Kuningan,<br>Kabupaten Kuningan, Jawa Barat</p>
                 </div>
                 <div>

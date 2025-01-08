@@ -78,7 +78,9 @@
             <div class="location">
                 <h2 class="fw-bold">Our location</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor</p>
-                <div class="bg-light" style="height: 16rem; border-radius: 0.5rem;"></div>
+                <div class="bg-light"">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3328206579354!2d108.51610857504429!3d-6.97000579303063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f17a006c1ae7b%3A0x16279b08348312f!2sPakuwon%20Mini%20Soccer!5e0!3m2!1sid!2sid!4v1736267874545!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>

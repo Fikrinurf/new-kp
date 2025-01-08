@@ -6,7 +6,7 @@
 @section('content')
 <section class="container container-mybooking text-black ">
     <br>
-    <h1 class="text-center mb-4">Booking saya</h1>
+    <h1 class="text-center mb-4">My Booking</h1>
     <div class="swal" data-swal="{{ session('success') }}"></div>
     <div class="tab-content" id="orders-table-tab-content">
         <div class="tab-pane fade active show" id="orders-paid" role="tabpanel" aria-labelledby="orders-paid-tab">

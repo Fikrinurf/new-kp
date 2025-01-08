@@ -84,3 +84,9 @@ body{
     background-color: #2929da;
     color: #ffffff;
 }
+
+.map  {
+    height:320px;
+    width: 100px;
+}
+

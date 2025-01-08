@@ -19,13 +19,6 @@
             <h1>Masuk</h1>
             <form action="{{ url('/login') }}" method="POST">
                 @csrf
-                <button name="btnGoogle" class="btnGoogle"><img src="img/icon/Google.png " class="logo-google"
-                        alt="" />Lanjutkan dengan google</button>
-                <br />
-                <button name="btnFacebook" class="btnFacebook"><img src="img/icon/Facebook.png"
-                        class="logo-facebook" />Lanjutkan dengan facebook</button>
-                <br />
-                <br />
                 <label>Email</label><br />
                 <input type="text" name="email" class="field-email" value="{{ old('email') }}" /><br />
                 <label>Kata Sandi</label><br />
